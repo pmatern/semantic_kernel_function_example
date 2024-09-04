@@ -21,7 +21,7 @@ public class Main {
                 .withModelId("phi3")
                 .build();
 
-        var plugin = KernelPluginFactory.createFromObject(new MitigationPlugin(), "ApplyMitigation");
+        var plugin = KernelPluginFactory.createFromObject(new ExamplePlugin(), "Example");
 
         var kernel = Kernel.builder()
                 .withAIService(ChatCompletionService.class, service)
